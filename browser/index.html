@@ -17,6 +17,7 @@
     <script src="../detects/ie10.js"></script>
     <script src="../detects/ie10touch.js"></script>
     <script src="../detects/ie11.js"></script>
+    <script src="../detects/edge.js"></script>
     <script src="../detects/ios.js"></script>
     <script src="../detects/linux.js"></script>
     <script src="../detects/mac.js"></script>
@@ -44,6 +45,7 @@
         'ie10': ['style', 'script', 'class'],
         'ie10touch': ['style', 'script', 'class'],
         'ie11': ['style', 'script', 'class'],
+        'edge': ['style', 'script', 'class'],
         'ios': ['style', 'script', 'class'],
         'linux': ['style', 'script', 'class'],
         'mac': ['style', 'script', 'class'],
@@ -87,6 +89,9 @@
     });
     conditionizr.on('ie11', function () {
       document.body.innerHTML += '<div>IE11!</div>';
+    });
+    conditionizr.on('edge', function () {
+      document.body.innerHTML += '<div>Edge!</div>';
     });
     conditionizr.on('ios', function () {
       document.body.innerHTML += '<div>iOS!</div>';
